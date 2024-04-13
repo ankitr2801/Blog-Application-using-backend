@@ -1,0 +1,42 @@
+
+<h1>Update component</h1>
+
+
+<div class="container">
+    <div class="row justify-content-center">
+        <div class="col-md-6">
+            <div class="card mt-5">
+                <div class="card-header bg-primary">
+                    <h1 class="mb-0">Add Blog</h1>
+                </div>
+                <div class="card-body">
+                    <form action="/api/blogs/createBlogs" method="post"  enctype="multipart/form-data">
+                        <div class="mb-3">
+                            <label for="title" class="form-label">Title</label>
+                            <input type="Text" class="form-control" id="Name" name="title" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="author" class="form-label">Author</label>
+                            <input type="text" class="form-control" id="author" name="author" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="content" class="form-label">Content</label>
+                            <textarea type="content" class="form-control" name="content" id="content" required></textarea>
+                        </div>
+                        <div class="mb-3">
+                            <label for="rating" class="form-label">Rating</label>
+                            <input type="number" class="form-control" id="rating" name="rating" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="imageUrL" class="form-label">Image URL</label>
+                            <!-- <input type="text" class="form-control" id="imageUrl" name="imageUrl"> -->
+                            <input type="file" name="imageUrL" id="imageUrL" accept="images/*">
+                        </div>
+                        <button type="submit" class="btn btn-primary">Add Blog </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
